@@ -146,6 +146,7 @@ These workflows were built as Alfred-native implementations inspired by the foll
 - Bob Control was inspired by Raycast's Bob extension: <https://github.com/raycast/extensions/tree/870667fc671801a467deb7c4c7fc72992efe3820/extensions/bob/>
 - Tana Paste was inspired by Raycast's Tana Paste extension: <https://github.com/raycast/extensions/tree/b8c8fcd7ebd441a5452b396923f2a40e879565ba/extensions/tana-paste/>
 - Terminal Finder for Ghostty was inspired by Raycast's Terminal Finder extension: <https://github.com/raycast/extensions/tree/186d955eda64f9e956b25a3fdf5566b1d38f57f2/extensions/terminalfinder/>
+- Webpage to Markdown was inspired by Raycast's Webpage to Markdown extension: <https://github.com/raycast/extensions/tree/186d955eda64f9e956b25a3fdf5566b1d38f57f2/extensions/webpage-to-markdown/>
 
 The Raycast extensions repository is open source under the MIT License. This repository keeps the attribution explicit because the original Raycast workflows shaped the feature choices and interaction design.
 
