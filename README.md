@@ -2,7 +2,7 @@
 
 A small collection of Alfred workflows for macOS.
 
-These workflows were made for Alfred, but some of the ideas and command surfaces were inspired by open-source Raycast extensions. This repository is not affiliated with Raycast, Alfred, Bob, Tana, or Ghostty.
+These workflows were made for Alfred, but some of the ideas and command surfaces were inspired by open-source Raycast extensions. This repository is not affiliated with Raycast, Alfred, Bob, Tana, Ghostty, Jina AI, or yt-dlp.
 
 ## Workflows
 
@@ -76,9 +76,66 @@ Requirements:
 - Alfred
 - Tana, if you want to paste the converted output directly into Tana
 
+### Webpage to Markdown
+
+Convert a public webpage to Markdown through Jina Reader, save the result as a `.md` file, and copy the Markdown to the clipboard.
+
+Commands:
+
+- `mdurl <URL>`: convert the URL you type
+- `mdclip`: convert the URL currently in the clipboard
+
+Options are configurable in Alfred workflow variables:
+
+- `include_metadata`
+- `prepend_front_matter`
+- `include_links_summary`
+- `jina_api_key`
+- `output_folder`
+
+Privacy note: this workflow sends the target URL to Jina Reader for conversion.
+
+### Video Downloader
+
+Download videos, extract MP3 audio, or save transcripts through `yt-dlp`.
+
+Requirements:
+
+- Alfred
+- `yt-dlp`
+- `ffmpeg`
+
+Install command-line dependencies with Homebrew:
+
+```bash
+brew install yt-dlp ffmpeg
+```
+
+Keyword:
+
+```text
+vd
+```
+
+Please use this workflow only for content you have the right to download and in accordance with each site's terms.
+
+### Currency Exchange
+
+Convert between currencies from Alfred using public exchange-rate data.
+
+Examples:
+
+```text
+fx 100 usd eur
+fx 100美元 人民币
+fx 250 eur to gbp
+```
+
+The workflow supports common English and Chinese currency aliases and caches recent exchange-rate responses briefly.
+
 ## Installation
 
-Download the `.alfredworkflow` file you want and open it with Alfred.
+Download the `.alfredworkflow` file you want from the [`workflow`](workflow/) folder and open it with Alfred.
 
 If macOS asks for Automation or Accessibility permissions, allow Alfred to control the relevant apps. Some workflows need this to read Finder windows, operate terminal apps, or trigger app-specific actions.
 
@@ -95,4 +152,3 @@ The Raycast extensions repository is open source under the MIT License. This rep
 ## License
 
 MIT License.
-
