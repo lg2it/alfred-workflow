@@ -2,7 +2,7 @@
 
 A small collection of Alfred workflows for macOS.
 
-These workflows were made for Alfred, but some of the ideas and command surfaces were inspired by open-source Raycast extensions. This repository is not affiliated with Raycast, Alfred, Bob, Tana, Ghostty, Jina AI, or yt-dlp.
+These workflows were made for Alfred, but some of the ideas and command surfaces were inspired by open-source Raycast extensions. This repository is not affiliated with Raycast, Alfred, Bob, Tana, Ghostty, Jina AI, yt-dlp, Homebrew, or npm.
 
 ## Workflows
 
@@ -133,6 +133,29 @@ fx 250 eur to gbp
 
 The workflow supports common English and Chinese currency aliases and caches recent exchange-rate responses briefly.
 
+### Brew + npm
+
+Search and manage Homebrew formulae, Homebrew casks, and global npm packages from Alfred.
+
+Commands:
+
+- `brew`: open the Homebrew command menu
+- `brew <query>`: search formulae and casks
+- `brew installed`: list installed formulae and casks
+- `brew outdated`: list outdated formulae and casks
+- `npm`: open the npm command menu
+- `npm <query>`: search npm packages
+- `npm installed`: list globally installed npm packages
+- `npm outdated`: list outdated global npm packages
+
+Requirements:
+
+- Alfred
+- Homebrew
+- npm, if you want to use the npm package actions
+
+Homebrew search metadata is cached from the official Homebrew JSON API at `formulae.brew.sh`; npm search results are cached from `registry.npmjs.org`.
+
 ## Installation
 
 Download the `.alfredworkflow` file you want from the [`workflow`](workflow/) folder and open it with Alfred.
@@ -147,6 +170,7 @@ These workflows were built as Alfred-native implementations inspired by the foll
 - Tana Paste was inspired by Raycast's Tana Paste extension: <https://github.com/raycast/extensions/tree/b8c8fcd7ebd441a5452b396923f2a40e879565ba/extensions/tana-paste/>
 - Terminal Finder for Ghostty was inspired by Raycast's Terminal Finder extension: <https://github.com/raycast/extensions/tree/186d955eda64f9e956b25a3fdf5566b1d38f57f2/extensions/terminalfinder/>
 - Webpage to Markdown was inspired by Raycast's Webpage to Markdown extension: <https://github.com/raycast/extensions/tree/186d955eda64f9e956b25a3fdf5566b1d38f57f2/extensions/webpage-to-markdown/>
+- Brew + npm was inspired by Raycast's Brew extension: <https://github.com/raycast/extensions/tree/186d955eda64f9e956b25a3fdf5566b1d38f57f2/extensions/brew/>
 
 The Raycast extensions repository is open source under the MIT License. This repository keeps the attribution explicit because the original Raycast workflows shaped the feature choices and interaction design.
 
